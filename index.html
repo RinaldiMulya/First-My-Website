@@ -2,101 +2,142 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nosifer">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nosifer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <title>Sesi 1</title>
 </head>
 
 <body>
+    <header>
+        <div class="Logo">
+            <img class="img-Logo" src="/Asset/Icon/Icon Utama3.png" alt="" srcset="" />
+            <h1 class="title-Logo">TAMA X</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#tentang"> Tentang </a></li>
+                <li><a href="mailto:rinaldimulyatam@gmail.com"> Kontak </a></li>
+                <li><a href="#FakeBot">Fake Bot</a></li>
+            </ul>
+        </nav>
+        <button type="submit" class="btn-follow" onclick="redirInstagram()">
+            Follow
+        </button>
+    </header>
 
-        <header>
-            <div class="Logo">
-                <img class="img-Logo" src="/Asset/Icon/Icon Utama3.png" alt="" srcset="">
-                <h1 class="title-Logo">TAMA X</h1>
+    <main>
+        <div class="carousel">
+            <div class="carousel-slide fade">
+                <img src="/Asset/Foto/luffy-gear-5-moonlit-night-one-piece-thumb.jpg" alt="Image 1" />
+                <div class="carousel-caption">
+                    <h2>Luffy</h2>
+                    <p>kaizoku ou ni ore wa naru</p>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#tentang"> Tentang </a></li>
-                    <li><a href="https://wa.me/081212923623"> Join </a></li>
-                    <li><a href="mailto:rinaldimulyatam@gmail.com"> Kontak </a></li>
-                </ul>
-            </nav>
-            <button type="submit" class="btn-follow" onclick="redirInstagram()" > Follow Saya </button>
-        </header>
+            <div class="carousel-slide fade">
+                <img src="/Asset/Foto/1355563-Roronoa-Zoro-Green-HairRoronoa-Zoro.png" alt="Image 2" />
+                <div class="carousel-caption">
+                    <h2>Zoro</h2>
+                    <p>Sekai saikyō no kenshi</p>
+                </div>
+            </div>
+            <div class="carousel-slide fade">
+                <img src="/Asset/Foto/1298172.jpg" alt="Image 3" />
+                <div class="carousel-caption">
+                    <h2>Sanji</h2>
+                    <p>Menemuka All BLUE</p>
+                </div>
+            </div>
+        </div>
 
-        <main>
+        <button class="carousel-control" id="prev">
+            <i id="aroow-left" class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="carousel-control" id="next">
+            <i id="aroow-right" class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <div class="paralax">
+            <div class="tentang" id="tentang">
+                <p class="title-tentang">Pertualangan Mugiwara No Ichimi</p>
+                <p class="description-tentang">
+                    Pertualangan pencarian harta karun One Piece dengan batu peninggalan
+                    poneglyph serta menjadikan Luffy Raja bajak laut
+                </p>
+                <div class="mt-10">
+                    <button type="submit" class="btn-follow" onclick="redirWhatsapp()">
+                        Bergabung
+                    </button>
+                </div>
+            </div>
 
             <div class="container">
-                <div class="intro">
-                    <p class="title-intro"> Roronoa Zoro </p>
-                    <p class="description-intro"> "Tecnophile, Pengembang Teknologi" </p>
-                    <img src="/Asset/Foto/Zoro.png" alt="img-intro" class="img-intro">
-                </div>
-            </div>
-            <div class="paralax">
-
-                <div class="tentang" id="tentang">
-                    <p class="title-tentang"> Lorem ipsum dolor sit amet </p>
-                    <p class="description-tentang"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Sed varius
-                        .facilisis tellus,</p>
-                    <div class="mt-10">
-                        <button type="submit" class="btn-follow" onclick="redirWhatsapp()" > Follow Saya </button>
+                <div class="card">
+                    <div class="card-item">
+                        <img src="/Asset/Icon/Luffy.png" alt="Icon-Card 1" class="Icon-card" />
+                        <p class="title-card-item">Luffy</p>
+                        <p class="description-card-item">
+                            Baka Sencho (Kapten bodoh) kapten bajak laut mugiwara seseorang
+                            yg akan menjadi RAJA BAJAK LAUT
+                        </p>
+                    </div>
+                    <div class="card-item">
+                        <img src="/Asset/Icon/Zoro.png" alt="Icon-Card 2" class="Icon-card" />
+                        <p class="title-card-item">Zoro</p>
+                        <p class="description-card-item">
+                            Dengan julukan Kaizoku Gari (Pemburu bajak laut) Zoro menjadi
+                            wakil kapten yg akan menjadi Sekai saikyō no kenshi
+                        </p>
+                    </div>
+                    <div class="card-item">
+                        <img src="/Asset/Icon/Sanji.png" alt="Icon-Card 3" class="Icon-card" />
+                        <p class="title-card-item">Sanji</p>
+                        <p class="description-card-item">
+                            Kuro ashi no Sanji si (kaki hitam),salah satu orang
+                            terkuat dan juga koki yg bertanggung jawab dalam Kelompok
+                            mugiwara,
+                        </p>
+                    </div>
+                    <div class="card-item">
+                        <img src="/Asset/Icon/Mugiwara2.png" alt="Icon-Card 4" class="Icon-card" />
+                        <p class="title-card-item">Mugiwara</p>
+                        <p class="description-card-item">
+                            kelompok Bajak Laut yang terkenal,kuat dan ditakuti oleh
+                            Pemerintah Dunia yang berasal dari East Blue.
+                        </p>
                     </div>
                 </div>
-
-                <div class="container">
-
-                    <div class="card">
-                        <div class="card-item">
-                            <img src="/Asset/Icon/Luffy.png" alt="Icon-Card 1" class="Icon-card">
-                            <p class="title-card-item"> Luffy </p>
-                            <p class="description-card-item"> Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.Sed
-                                varius .facilisis tellus,</p>
-                        </div>
-                        <div class="card-item">
-                            <img src="/Asset/Icon//Sanji.png" alt="Icon-Card 2" class="Icon-card">
-                            <p class="title-card-item"> Sanji </p>
-                            <p class="description-card-item"> Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.Sed
-                                varius .facilisis tellus,</p>
-                        </div>
-                        <div class="card-item">
-                            <img src="/Asset/Icon/Robin.png" alt="Icon-Card 3" class="Icon-card">
-                            <p class="title-card-item"> Robin </p>
-                            <p class="description-card-item"> Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.Sed
-                                varius .facilisis tellus,</p>
-                        </div>
-                        <div class="card-item">
-                            <img src="/Asset/Icon/Mugiwara2.png" alt="Icon-Card 4" class="Icon-card">
-                            <p class="title-card-item"> Mugiwara </p>
-                            <p class="description-card-item"> Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.Sed
-                                varius .facilisis tellus,</p>
-                        </div>
-                    </div>
-
-                </div>
-
             </div>
+        </div>
 
-        </main>
+        <div class="FakeBot" id="FakeBot">
+            <p class="title-FakeBot">Mari Bermain dengan saya 😁</p>
+            <p class="description-FakeBot">
+                jangan dibawa serius yah kan cuman permainan, tapi tenang ajh ga ada
+                yg fake ko diantara kita hehehe🤍
+            </p>
 
-        <footer>
-            <p class="title-footer"> &copy; Rinaldi Mulya Website 2023 </p>
-        </footer>
+            <div class="container-fakeBot">
+                <div class="warpper-fakeBot">
+                    <p id="pertanyaan"></p>
+                    <div class="row">
+                        <input type="text" id="jawaban" placeholder="Silakan Jawab"/>
+                        <button class="btn-fake" onclick="botStart()">SEND</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <script>
-            function redirInstagram() {
-                window.location.href="http://instagram.com/rinaldy_mulya"
-            }
-            function redirWhatsapp() {
-                window.location.href="https://wa.me/+6281212923623"
-            }
-        </script>
+    </main>
+
+    <footer>
+        <p class="title-footer">&copy; Rinaldi Mulya Website 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

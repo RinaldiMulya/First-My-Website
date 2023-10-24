@@ -6,6 +6,8 @@
     scroll-behavior: smooth;
     background-color: rgb(51, 50, 50);
 }
+                                        /* Header */
+
 header{
     display: flex;
     justify-content: center;
@@ -47,10 +49,11 @@ header{
 nav ul {
     display: flex;
     padding: 25px;
+    margin: 0px;
     background-color: rgb(36, 13, 13);  
 }
 li{
-    list-style-type: none;
+    list-style-type:none;
     padding: 8px;
     background-color: rgb(36, 13, 13);
 }
@@ -83,39 +86,100 @@ a{
     background-color: rgb(190, 110, 4);
     transition: all.5s ease 0s;
 }
-/* End Header */
+                                        /* End Header */
+
+                                        /* Carousel */  
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    background: transparent;
+  }
+  
+  .carousel-slide {
+    display: none;
+    width: 100%;
+    animation: fade 3s infinite;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  @keyframes fade {
+    0%, 100% { opacity: 1; }
+    25%, 75% { opacity: 2; }
+  }
+  
+  .carousel-slide.active {
+    display: block;
+    animation: none;
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    color: rgba(24, 24, 24, 0.685);
+    padding: 10px;
+  }
+  #aroow-right{
+    background: transparent;
+  }
+  #aroow-left{
+    background: transparent;
+  }
+  
+  #prev {
+    left: 10px;
+  }
+  
+  #next {
+    right: 10px;
+  }
+
+  .carousel-caption {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    opacity: 1;
+    text-align: center;
+    transition: opacity 0.5s;
+    background: transparent;
+    color: rgb(252, 10, 10);
+  }
+  
+  .carousel-caption h2 {
+    font-size: 24px;
+    margin: 0;
+    background: transparent;
+  }
+  
+  .carousel-caption p {
+    font-size: 16px;
+    margin: 0;
+    background: transparent;
+  }
+  
+                                        /* End Carousel */
+
+                                        /* Paralax */
 .container{
     background-color: transparent;
     max-width: 1200px;
     margin: 0 auto;
     padding: 70px 0;
 }
-.intro{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-    margin-bottom: none;
-}
-.title-intro{
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(190, 110, 4);
-}
-.description-intro{
-    font-size: 28px;
-    font-weight: bolder;
-    color: rgb(190, 110, 4);
-}
-.img-intro{
-    width: 50%;
-    height: auto;
-    padding: 10px;
-    max-width: 350px;
-}
-/* End Intro */
 .paralax{
     background-image: url('Asset/Foto/Maps.jpg');
     background-attachment: fixed;
@@ -123,7 +187,7 @@ a{
     background-repeat: no-repeat;
     background-size:cover;
     height: 100%;
-    min-height: 123vh;
+    min-height: 130vh;
 }
 .tentang{
     display: flex;
@@ -151,8 +215,9 @@ a{
     color: rgb(138, 138, 138);
     background-color: rgb(36, 13, 13);
 }
-/* End Paralax */
+                                         /* End Paralax */
 
+                                         /* Card  */
 .card{
    gap: 10px;
    display: flex;
@@ -188,10 +253,10 @@ a{
     background-color:transparent;
     
 }
-/* End Card */
+                                        /* End Card */
 
-footer{
-    
+                                        /* Footer */
+footer{ 
     padding: 18px;
     text-align: center;
     background-color: rgb(36, 13, 13);
@@ -202,7 +267,88 @@ footer{
     color: rgb(138, 138, 138);
     background-color: rgb(36, 13, 13);
 }
-@media screen and (max-width : 700px) {
+                                        /* End footer */
+
+                                        /* Start Fake Bot */
+
+.FakeBot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    padding: 20px;
+    background-color: rgb(36, 13, 13);
+}
+.title-FakeBot{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(138, 138, 138);
+    background-color: rgb(36, 13, 13);
+}
+.description-FakeBot{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: rgb(138, 138, 138);
+    background-color: rgb(36, 13, 13);
+}
+.container-fakeBot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+.warpper-fakeBot{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: rgb(36, 13, 13);
+}
+#pertanyaan{
+    font-size: 24px;
+    font-weight: lighter;
+    color: rgb(138, 138, 138);
+    background-color: rgb(36, 13, 13);
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 12px;
+    background-color: rgb(36, 13, 13);
+}
+.btn-fake{
+    cursor: pointer;
+    border: none;
+    padding: 13px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 5px;
+    color: rgb(138, 138, 138);
+    background-color: rgb(82, 3, 3);
+}
+
+.btn-fake:hover{
+    color:  rgb(48, 47, 47);
+    background-color: rgb(190, 110, 4);
+    transition: all.5s ease 0s;
+}
+input{
+    border: none;
+    background-color: bisque;
+    color: black;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+                                        /* End Fake Bot */
+
+    @media screen and (min-width: 300px) and (max-width: 700px) {
 
     header{
         display: flex;
@@ -220,11 +366,13 @@ footer{
     .container{
         padding: 0;
     }
-    .intro{
-        margin-top: 20px;
-    }
     .btn-follow{
         margin-bottom: 0;
+    }
+    
+    .carousel{
+        width: 100%;
+        height: 80vh;
     }
     .paralax{
         height: 100%;
